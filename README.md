@@ -26,7 +26,13 @@ https://geodynamics.org/cig/software/specfem3d_globe/
 tar xvf SPECFEM3D_GLOBE_V7.0.0.tar.gz
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-mpi
 make
+# make the mesh
+mpirun -np 4 bin/xmeshfem3D
+# run the case
+mpirun -np 4 bin/xspecfem3D
 
 ```
+
+# Download Example
 
 
