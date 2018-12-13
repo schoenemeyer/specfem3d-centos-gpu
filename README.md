@@ -1,6 +1,6 @@
 # specfem3d-centos-gpu
 
-# Install OpenMPI
+## Install OpenMPI
 ```
 ./configure --prefix=/opt/lib/openmpi/1.10.7
 make
@@ -11,16 +11,16 @@ Add the the Path /opt/lib/openmpi/1.10.7/bin
 
 Download Source Code
 
-# Read Installation Guide
+## Read Installation Guide
 
 The Installation Guide is available here:
 https://specfem3d.readthedocs.io/en/latest/02_getting_started/#getting-started
 
-# Download SPECFEM3D_GLOBE_V7.0.0.tar.gz
+## Download SPECFEM3D_GLOBE_V7.0.0.tar.gz
 from
 https://geodynamics.org/cig/software/specfem3d_globe/
 
-# Installation
+## Installation
 
 ```
 tar xvf SPECFEM3D_GLOBE_V7.0.0.tar.gz
@@ -34,10 +34,10 @@ mpirun -np 4 bin/xspecfem3D
 
 ```
 
-# Download Example
+## Download Example
 
 
 
-# Run the model with GPUs  : Details:
+## Run the model with GPUs  : Details:
 https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/specfem3d-globe/
 
