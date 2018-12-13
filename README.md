@@ -33,6 +33,30 @@ mpirun -np 4 bin/xmeshfem3D
 mpirun -np 4 bin/xspecfem3D
 
 ```
+Typically this example will run on a 6 core Workstation with 16GB RAM in less in 850 secs using 4 cores.
+The example needs about 8 GB RAM.
+
+```
+ Time step #         1500
+ Time:    2.67369890      minutes
+
+ Max norm displacement vector U in solid in all slices for forward prop. (m) =    4038.91577
+ Max non-dimensional potential Ufluid in fluid in all slices for forward prop. =    1.39181993E-24
+
+ Elapsed time in seconds =    848.92900201100019
+ Elapsed time in hh:mm:ss =      0 h 14 m 08 s
+ Mean elapsed time per time step in seconds =   0.56595266800733346
+
+ Time steps done =         1500  out of         1500
+ Time steps remaining =            0
+ Estimated remaining time in seconds =    0.0000000000000000
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 00 s
+
+ Estimated total run time in seconds =    848.92900201100019
+ Estimated total run time in hh:mm:ss =      0 h 14 m 08 s
+ We have done    100.000000     % of that
+
+```
 
 ## Download Example
 
