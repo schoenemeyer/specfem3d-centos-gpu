@@ -26,13 +26,18 @@ https://geodynamics.org/cig/software/specfem3d_globe/
 tar xvf SPECFEM3D_GLOBE_V7.0.0.tar.gz
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-mpi
 make
-# make the mesh
+
+# Run the Meshing Tool
 mpirun -np 4 bin/xmeshfem3D
-# run the case
+# Run the main program
 mpirun -np 4 bin/xspecfem3D
 
 ```
 
 # Download Example
 
+
+
+# Run the model with GPUs  : Details:
+https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/specfem3d-globe/
 
