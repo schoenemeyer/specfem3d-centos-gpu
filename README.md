@@ -75,6 +75,13 @@ However the fast way is to issue the follwoing command (assuming using OpenMPI)
 
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda-architecture=cuda8  CUDA_LIB=/usr/local/cuda-9.0/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include
 
+make
+
+For running the Benchmarks download the SPECFEM3D_Cartesian_GPU_READY_FILES_v2.tgz from
+
+https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/specfem3d-cartesian/
+
+and copy the input_cartesian_v4.tar to your root specfem3d installation folder
 
 
 
