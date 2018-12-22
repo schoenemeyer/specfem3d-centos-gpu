@@ -37,6 +37,8 @@ mpirun -np 4 bin/xmeshfem3D
 mpirun -np 4 bin/xspecfem3D
 
 ```
+
+## Run a very simple Testcase to verify that the installation went fine.
 Typically this example will run on a 6 core Workstation with 16GB RAM in less in 850 secs using 4 cores.
 The example needs about 8 GB RAM.
 
@@ -62,7 +64,14 @@ The example needs about 8 GB RAM.
 
 ```
 
-## Download Example
+## Run an somple  Example with 4 cores
+
+cd EXAMPLES
+
+cd regional_Greece_small
+
+This  contains an example for a small regional simulation and an event located in southern Greece; the example can be run as a small test on a single desktop machine
+  (4 CPUs, forward simulation lasts ~5min, kernel simulation lasts ~10min) 
 
 
 
