@@ -62,6 +62,15 @@ The example needs about 8 GB RAM.
 
 
 
-## Run the model with GPUs  : Details:
+## Run the model with GPUs:
+
+one can find some basic remarks here, 
 https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/specfem3d-globe/
+
+However the fast way is to issue the follwoing command (assuming using OpenMPI)
+
+./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda-architecture=cuda8  CUDA_LIB=/usr/local/cuda-9.0/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include
+
+
+
 
