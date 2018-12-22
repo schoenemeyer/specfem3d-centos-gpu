@@ -70,13 +70,18 @@ cd EXAMPLES
 
 cd regional_Greece_small
 
+./run_this_example.sh
+
+
 This  contains an example for a small regional simulation and an event located in southern Greece; the example can be run as a small test on a single desktop machine
   (4 CPUs, forward simulation lasts ~5min, kernel simulation lasts ~10min) 
 You will need at least 4GB free memory.
 
 
 
-## Run the model with GPUs:
+## Run the model with GPUs
+
+Recompile the binaries.
 
 one can find some basic remarks here, 
 https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/specfem3d-globe/
@@ -86,6 +91,20 @@ However the fast way is to issue the follwoing command (assuming using OpenMPI)
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda-architecture=cuda8  CUDA_LIB=/usr/local/cuda-9.0/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include
 
 make
+
+Rerun the above example , but change the File  Par_file in the DATA directory 
+Look for GPU_MODE and change the value to .true.
+```
+# set to true to use GPUs
+GPU_MODE                        = .false.
+# Only used if GPU_MODE = .true. :
+GPU_RUNTIME                     = 1
+# 2 (OpenCL), 1 (Cuda) ou 0 (Compile-time -- does not work if configured with --with-cuda *AND* --with-opencl)
+GPU_PLATFORM                    = NVIDIA
+GPU_DEVICE                      = Tesla
+```
+
+## More Examples
 
 For running the Benchmarks download the SPECFEM3D_Cartesian_GPU_READY_FILES_v2.tgz from
 
