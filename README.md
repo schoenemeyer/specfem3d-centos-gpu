@@ -1,4 +1,8 @@
-# specfem3d-centos-gpu
+# Run SPECFEM3D on CentOS 7.4 with CPU and NVIDIA GPU machines 
+
+For the basics of SPECFEM3D read this website
+https://specfem3d.readthedocs.io/en/latest/
+
 
 ## Install OpenMPI
 ```
