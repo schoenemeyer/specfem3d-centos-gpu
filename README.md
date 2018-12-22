@@ -3,7 +3,8 @@
 For the basics of SPECFEM3D read this website
 https://specfem3d.readthedocs.io/en/latest/
 
-https://specfem3d.readthedocs.io/en/latest/figures/specfem3d.jpg
+<img src="https://specfem3d.readthedocs.io/en/latest/figures/specfem3d.jpg" width "350">
+
 
 ## Install OpenMPI
 ```
