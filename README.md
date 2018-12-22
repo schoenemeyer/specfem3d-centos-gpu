@@ -64,7 +64,7 @@ The example needs about 8 GB RAM.
 
 ```
 
-## Run an somple  Example with 4 cores
+## Run a very simple Example with 4 cores on a desktop machine
 
 cd EXAMPLES
 
