@@ -72,6 +72,7 @@ cd regional_Greece_small
 
 This  contains an example for a small regional simulation and an event located in southern Greece; the example can be run as a small test on a single desktop machine
   (4 CPUs, forward simulation lasts ~5min, kernel simulation lasts ~10min) 
+You will need at least 4GB free memory.
 
 
 
