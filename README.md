@@ -18,11 +18,9 @@ make
 sudo make install
 sudo make check
 ```
-Add the the Path /opt/lib/openmpi/1.10.7/bin
+Add the the Path /opt/lib/openmpi/1.10.7/bin to your .bashrc
 
-Download Source Code
-
-## Read Installation Guide
+## Read Installation Guide for SPECFEM3D
 
 The Installation Guide is available here:
 https://specfem3d.readthedocs.io/en/latest/02_getting_started/#getting-started
@@ -35,10 +33,9 @@ Another way is to download SPECFEM3D_GLOBE_V7.0.0.tar.gz as described on the NVI
 https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/specfem3d-globe/
 
 
-## Installation
+## Basic Installation
 
 ```
-tar xvf SPECFEM3D_GLOBE_V7.0.0.tar.gz
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-mpi
 make
 
