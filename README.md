@@ -77,6 +77,8 @@ cd regional_Greece_small
 
 ./run_this_example.sh
 
+Caution: This example only comes with the 7.0.0 Version.
+
 
 This  contains an example for a small regional simulation and an event located in southern Greece; the example can be run as a small test on a single desktop machine
   (4 CPUs, forward simulation lasts ~5min, kernel simulation lasts ~10min) 
@@ -94,22 +96,26 @@ After about 13 minutes you will an output like this:
  We have done    100.000000     % of that
 ```
 
-## Run the model with GPUs
+## Run a very simple Example with the current version
 
-Recompile the binaries.
+cd meshfem3D_examples/sep_bathymetry
+./run_this_example.sh
 
-one can find some basic remarks here, 
-https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/specfem3d-globe/
+check the timing in OUTPUT_FILES amd lool for timestamp
+Note the elapsed time in seconds
+```
+Elapsed time in seconds =    6.3373973179986933
+```
 
-However the fast way is to issue the follwoing command (assuming using OpenMPI)
+
+## Run the example "sep_bathymetry" with GPUs
+
+From the top directory run configure
 
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda=cuda8  CUDA_LIB=/usr/local/cuda-9.1/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include
 
 Be aware of LDFLAGS used to test nvcc in the configure script.
 Recommend to remove LDFLAGS in line 7763
-
-
-make
 
 Rerun the above example , but change the File  Par_file in the DATA directory 
 Look for GPU_MODE and change the value to .true.
@@ -122,6 +128,16 @@ GPU_RUNTIME                     = 1
 GPU_PLATFORM                    = NVIDIA
 GPU_DEVICE                      = Tesla
 ```
+
+./run_this_example.sh
+
+check again the timing in OUTPUT_FILES amd lool for timestamp
+Note the elapsed time in seconds
+```
+Elapsed time in seconds =    6.3373973179986933
+```
+
+
 
 ## More Examples
 
