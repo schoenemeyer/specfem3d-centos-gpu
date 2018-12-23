@@ -23,6 +23,8 @@ https://specfem3d.readthedocs.io/en/latest/02_getting_started/#getting-started
 ## Download SPECFEM3D_GLOBE_V7.0.0.tar.gz
 from
 https://geodynamics.org/cig/software/specfem3d_globe/
+or git clone from 
+https://github.com/geodynamics/specfem3d.git
 
 ## Installation
 
