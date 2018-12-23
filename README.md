@@ -72,11 +72,9 @@ The example needs about 8 GB RAM.
 
 ```
 
-## Run a very simple Example with 4 cores on a desktop machine
+## Run a simple example with 4 cores on a desktop machine
 
-cd EXAMPLES
-
-cd regional_Greece_small
+cd EXAMPLES/regional_Greece_small
 
 ./run_this_example.sh
 
