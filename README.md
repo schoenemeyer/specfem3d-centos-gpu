@@ -1,5 +1,13 @@
 # Run SPECFEM3D on CentOS 7.4 with CPU and NVIDIA GPU machines 
 
+# My machine
+AMD FX(tm)-6300 Six-Core Processor
+16GB DDR3
+CentOS 7.4 with kernel 3.10.0-862.14.4.el7.x86_6
+NVIDIA-DRIVER Version 390.87
+GeForce GTX 1050 TI (4GB)
+
+
 For the basics of SPECFEM3D read this website
 https://specfem3d.readthedocs.io/en/latest/
 https://specfem3d.readthedocs.io/en/latest/figures/specfem3d.jpg
@@ -130,6 +138,7 @@ GPU_DEVICE                      = Tesla
 ```
 
 ./run_this_example.sh
+While running the benchmark you can check nvidia-smi the load on the GPU on your system.
 
 check again the timing in OUTPUT_FILES amd lool for timestamp
 Note the elapsed time in seconds
