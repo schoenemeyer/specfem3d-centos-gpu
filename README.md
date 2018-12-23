@@ -117,7 +117,7 @@ From the top directory run configure
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda=cuda8  CUDA_LIB=/usr/local/cuda-9.1/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include
 
 Be aware of LDFLAGS used to test nvcc in the configure script.
-Recommend to remove LDFLAGS in line 7763
+I recommend to remove LDFLAGS in line 7763.
 
 Rerun the above example , but change the File  Par_file in the DATA directory 
 Look for GPU_MODE and change the value to .true.
@@ -134,8 +134,8 @@ GPU_DEVICE                      = Tesla
 ./run_this_example.sh
 While running the benchmark you can check nvidia-smi the load on the GPU on your system. You will see a load close to 100%.
 
-check again the timing in OUTPUT_FILES amd look for timestamp002000
-Note the elapsed time in seconds, it should be similar like this
+check again the timing in OUTPUT_FILES and look for timestamp002000. 
+Note the elapsed time in seconds, it should be similar like this:
 
 ```
 Elapsed time in seconds =    6.3373973179986933
