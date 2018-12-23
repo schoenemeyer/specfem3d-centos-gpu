@@ -167,7 +167,7 @@ Estimated total run time in seconds =    18.063483254998573
 ```
 
 ![After processing](https://github.com/schoenemeyer/abaqus-2016-in-Azure/blob/master/zylinder.gif)
-<img src="https://github.com/schoenemeyer/abaqus-2016-in-Azure/blob/master/abaqus-s2b.png" width="412">
+<img src="https://github.com/schoenemeyer/specfem3d-centos-gpu/blob/master/tomography.png" width="412">
 
 ## More Examples
 
