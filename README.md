@@ -112,12 +112,10 @@ Estimated total run time in seconds =    811.10199375900265
 
 ## Run the example "sep_bathymetry" with GPUs
 
-From the top directory run configure
+From the top directory run configure like this
 
-./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda=cuda8  CUDA_LIB=/usr/local/cuda-9.1/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include
+./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda=cuda8  CUDA_LIB=/usr/local/cuda-9.1/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include LDFLAGS=
 
-Be aware of LDFLAGS used to test nvcc in the configure script.
-I recommend to remove LDFLAGS in line 7763.
 
 Rerun the above example , but change the File  Par_file in the DATA directory 
 Look for GPU_MODE and change the value to .true.
