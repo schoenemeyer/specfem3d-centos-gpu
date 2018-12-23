@@ -114,6 +114,24 @@ From the top directory run configure like this
 
 ./configure FC=gfortran CC=gcc MPIFC=mpif90 --with-cuda=cuda8  CUDA_LIB=/usr/local/cuda-9.1/lib64 MPI_INC=/opt/lib/openmpi/1.10.7/include LDFLAGS=
 
+Please doublecheck the right compiler option
+```
+# Fermi: -gencode=arch=compute_10,code=sm_10 not supported
+# Tesla (default): -gencode=arch=compute_20,code=sm_20
+# Geforce GT 650m: -gencode=arch=compute_30,code=sm_30
+# Kepler (cuda5,K20) : -gencode=arch=compute_35,code=sm_35
+# Kepler (cuda6.5,K80): -gencode=arch=compute_37,code=sm_37
+# Maxwell (cuda7,K2200): -gencode=arch=compute_50,code=sm_50
+# Pascal (cuda8,P100): -gencode=arch=compute_60,code=sm_60
+# Volta (cuda9,V100): -gencode=arch=compute_70,code=sm_70
+GENCODE_20 = -gencode=arch=compute_20,code=\"sm_20,compute_20\"
+GENCODE_30 = -gencode=arch=compute_30,code=\"sm_30,compute_30\"
+GENCODE_35 = -gencode=arch=compute_35,code=\"sm_35,compute_35\"
+GENCODE_37 = -gencode=arch=compute_37,code=\"sm_37\"
+GENCODE_50 = -gencode=arch=compute_50,code=\"sm_50,compute_50\"
+GENCODE_60 = -gencode=arch=compute_60,code=\"sm_60,compute_60\"
+GENCODE_70 = -gencode=arch=compute_70,code=\"sm_70,compute_70\"
+```
 
 Rerun the above example , but change the File  Par_file in the DATA directory 
 Look for GPU_MODE and change the value to .true.
