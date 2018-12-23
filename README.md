@@ -82,7 +82,17 @@ This  contains an example for a small regional simulation and an event located i
   (4 CPUs, forward simulation lasts ~5min, kernel simulation lasts ~10min) 
 You will need at least 4GB free memory.
 
+After about 13 minutes you will an output like this:
+```
+ Time steps done =         1300  out of         1300
+ Time steps remaining =            0
+ Estimated remaining time in seconds =    0.0000000000000000
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 00 s
 
+ Estimated total run time in seconds =    838.32395046799502
+ Estimated total run time in hh:mm:ss =      0 h 13 m 58 s
+ We have done    100.000000     % of that
+```
 
 ## Run the model with GPUs
 
