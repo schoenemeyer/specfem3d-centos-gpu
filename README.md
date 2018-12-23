@@ -101,7 +101,7 @@ After about 13 minutes you will an output like this:
 
 ## Run a very simple Example with the current version
 
-cd meshfem3D_examples/sep_bathymetry
+cd meshfem3D_examples/sep_bathymetry  \
 ./run_this_example.sh
 
 check the timing in OUTPUT_FILES amd lool for timestamp
