@@ -166,7 +166,7 @@ with GPU
 Estimated total run time in seconds =    18.063483254998573
 ```
 
-![After processing](https://github.com/schoenemeyer/specfem3d-centos-gpu/blob/master/tomography1.png)
+![After processing](<img src="https://github.com/schoenemeyer/specfem3d-centos-gpu/blob/master/tomography1.png)" width="412">
 <img src="https://github.com/schoenemeyer/specfem3d-centos-gpu/blob/master/tomography.png" width="412">
 
 ## More Examples
