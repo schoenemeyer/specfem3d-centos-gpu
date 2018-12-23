@@ -1,12 +1,7 @@
 # Run SPECFEM3D on CentOS 7.4 with CPU and NVIDIA GPU machines 
 
 # My machine
--AMD FX(tm)-6300 Six-Core Processor
--16GB DDR3
--CentOS 7.4 with kernel 3.10.0-862.14.4.el7.x86_6
--NVIDIA-DRIVER Version 390.87
--GeForce GTX 1050 TI (4GB)
-
+AMD FX(tm)-6300 Six-Core Processor, 16GB DDR3, CentOS 7.4 with kernel 3.10.0-862.14.4.el7.x86_6, NVIDIA-DRIVER Version 390.87, GeForce GTX 1050 TI (4GB)
 
 For the basics of SPECFEM3D read this website
 https://specfem3d.readthedocs.io/en/latest/
@@ -112,9 +107,8 @@ cd meshfem3D_examples/sep_bathymetry
 check the timing in OUTPUT_FILES amd lool for timestamp
 Note the elapsed time in seconds
 ```
-Elapsed time in seconds =    6.3373973179986933
+Estimated total run time in seconds =    811.10199375900265
 ```
-
 
 ## Run the example "sep_bathymetry" with GPUs
 
@@ -138,15 +132,15 @@ GPU_DEVICE                      = Tesla
 ```
 
 ./run_this_example.sh
-While running the benchmark you can check nvidia-smi the load on the GPU on your system.
+While running the benchmark you can check nvidia-smi the load on the GPU on your system. You will see a load close to 100%.
 
-check again the timing in OUTPUT_FILES amd lool for timestamp
-Note the elapsed time in seconds
+check again the timing in OUTPUT_FILES amd look for timestamp002000
+Note the elapsed time in seconds, it should be similar like this
+
 ```
 Elapsed time in seconds =    6.3373973179986933
 ```
-
-
+This is 128 times faster than without a GPU!
 
 ## More Examples
 
