@@ -1,11 +1,11 @@
 # Run SPECFEM3D on CentOS 7.4 with CPU and NVIDIA GPU machines 
 
 # My machine
-AMD FX(tm)-6300 Six-Core Processor \
+1x AMD FX(tm)-6300 Six-Core Processor \
 16GB DDR3 \
 CentOS 7.4 with kernel 3.10.0-862.14.4.el7.x86_6 \
 NVIDIA-DRIVER Version 390.87 \
-GeForce GTX 1050 TI (4GB)
+1x GeForce GTX 1050 TI (4GB)
 
 For the basics of SPECFEM3D read this website
 https://specfem3d.readthedocs.io/en/latest/
@@ -97,7 +97,7 @@ After about 13 minutes you will an output like this:
  We have done    100.000000     % of that
 ```
 
-## Run a very simple example "sep_bathymetry"  without GPUs
+## Run a very simple example "sep_bathymetry"  with CPU only
 
 cd meshfem3D_examples/sep_bathymetry  \
 ./run_this_example.sh
@@ -108,7 +108,7 @@ Note the elapsed time in seconds
 Estimated total run time in seconds =    811.10199375900265
 ```
 
-## Run the same example "sep_bathymetry" with GPUs
+## Run the same example "sep_bathymetry" with one GPU
 
 From the top directory run configure like this
 
@@ -156,7 +156,21 @@ Elapsed time in seconds =    6.3373973179986933
 ```
 This is 128 times faster than without a GPU!
 
+## Run a very simple example "tomographic_model "
+with CPU only
+```
+Estimated total run time in seconds =    1173.5035940100061
+```
+with GPU
+```
+Estimated total run time in seconds =    18.063483254998573
+```
+
+
+
 ## More Examples
+
+
 
 For running the Benchmarks download the SPECFEM3D_Cartesian_GPU_READY_FILES_v2.tgz from
 
