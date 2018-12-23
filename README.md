@@ -1,11 +1,11 @@
 # Run SPECFEM3D on CentOS 7.4 with CPU and NVIDIA GPU machines 
 
 # My machine
-AMD FX(tm)-6300 Six-Core Processor
-16GB DDR3
-CentOS 7.4 with kernel 3.10.0-862.14.4.el7.x86_6
-NVIDIA-DRIVER Version 390.87
-GeForce GTX 1050 TI (4GB)
+-AMD FX(tm)-6300 Six-Core Processor
+-16GB DDR3
+-CentOS 7.4 with kernel 3.10.0-862.14.4.el7.x86_6
+-NVIDIA-DRIVER Version 390.87
+-GeForce GTX 1050 TI (4GB)
 
 
 For the basics of SPECFEM3D read this website
