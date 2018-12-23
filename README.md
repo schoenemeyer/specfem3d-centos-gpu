@@ -97,7 +97,7 @@ After about 13 minutes you will an output like this:
  We have done    100.000000     % of that
 ```
 
-## Run a very simple Example with the current version
+## Run a very simple example "sep_bathymetry"  without GPUs
 
 cd meshfem3D_examples/sep_bathymetry  \
 ./run_this_example.sh
@@ -108,7 +108,7 @@ Note the elapsed time in seconds
 Estimated total run time in seconds =    811.10199375900265
 ```
 
-## Run the example "sep_bathymetry" with GPUs
+## Run the same example "sep_bathymetry" with GPUs
 
 From the top directory run configure like this
 
